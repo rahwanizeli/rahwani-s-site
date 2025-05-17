@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rhwanyrzl</title>
+<link rel="icon" type="icon" href="gambau/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background-image: url('gambau/batik.jpeg');
+}
+
+body, html{
+  height: 100%;
+  margin: 0;
+  font-family: bermuda;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #df6175; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 30px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 30px 30px;
+  background-color: inherit;
+  font-family: bermuda;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #e5ada8;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #e5ada8;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+	<!-- Header -->
+	<div id="header">
+		<img src="gambau/banner.png" alt="Banner" width= "1340" height="240" />
+	</div>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Me <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="aboutme.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="interest.html">Interest</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">SocMeds <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="https://www.instagram.com/rhwnyrzl/">Intagram</a>
+      <a href="https://x.com/rhwanyrz1?s=11">X</a>
+      <a href="https://www.tiktok.com/@rhwany_?_t=ZS-8wOrFfT8ud6">TikTok</a>
+    </div>
+  </div>
+  <a href="contact.html">Contact</a>
+  <a href="gallery.html">Gallery</a>
+    </div>
+
+<div id="AboutMe">
+
+<div>
+  <h2 style="font-size:70px; font-family:lucida handwriting; text-align:center; background-color:#b3405a; color:white">My Face</h2>
+
+<p style="font-size:40px; font-family:lucida handwriting; text-align:center; background-color:#d78799; color:white">This is my fav photo of me</p>
+
+<img src="gambau/scrap.gif" alt="photo of me" class="center" width= "1000" height="450">
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
