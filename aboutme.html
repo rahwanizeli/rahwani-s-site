@@ -79,6 +79,23 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 </head>
 <body>
@@ -119,6 +136,30 @@ img {
 <img src="gambau/scrap.gif" alt="photo of me" class="center" width= "1000" height="450">
 </div>
 
+<div>
+  <h2 style="font-size:70px; font-family:lucida handwriting; text-align:center; background-color:#b3405a; color:white">Random Facts ABout Me</h2>
+
+<p style="font-size:40px; font-family:lucida handwriting; text-align:center; background-color:#d78799; color:white">I was born at Hospital Pakar Sultanah Aminah Muar</p>
+
+<p style="font-size:20px; font-family:lucida handwriting; text-align:center; background-color: white; color:black">I was born on 8th June 2025. I was supposed to be born in May in Melaka, but unfortunately I was two weeks late, so my mother had to be transferred to a specialist hospital in Muar, and I was born there instead.
+ </p>
+
+<a href="https://g.co/kgs/wLssM6d"><img src="gambau/hosp.jpg" alt="hospital" style="width:500px;height:400px;"></a>
+
+<p style="font-size:40px; font-family:lucida handwriting; text-align:center; background-color:#d78799; color:white">My top favourite singer</p>
+
+<p style="font-size:20px; font-family:lucida handwriting; text-align:center; background-color: white; color:black">Taylor Swift and Judika
+ </p>
+
+<div class="row">
+  <div class="column">
+    <img src="gambau/taylor.jpeg" alt="taylor" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="gambau/judika.jpeg" alt="judika" style="width:100%">
+  </div>
+</div>
+
 <script>
 function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
@@ -137,6 +178,30 @@ function openPage(pageName,elmnt,color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+
+	<!-- Disclaimer -->
+  <div id="footer">
+  <p style="font family: sans serif; text-align:center; font-size:30px;">&copy; 2025 RAHWANI. Recommended browser: Chrome, resolution 1920x1080. Last updated: May 21, 2025.</p>
+
+<div id="clock" style="text-align:center; font-size:40px; margin-top:10px;"></div>
+
+<script type="text/javascript">
+function updateClock() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  if (minutes < 10) { minutes = "0" + minutes; }
+  if (seconds < 10) { seconds = "0" + seconds; }
+  var timeString = hours + ":" + minutes + ":" + seconds;
+  document.getElementById('clock').innerHTML = "Current Time: " + timeString;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+
+
+</div>
 
 </body>
 </html>
