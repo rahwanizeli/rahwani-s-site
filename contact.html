@@ -139,5 +139,29 @@ th, td {
     <td>NO 1, JLN PRI 8, TAMAN PAYA RUMPUT INDAH, 76450, MELAKA</td>
 </table>
 
+	<!-- Disclaimer -->
+  <div id="footer">
+  <p style="font family: sans serif; text-align:center; font-size:30px;">&copy; 2025 RAHWANI. Recommended browser: Chrome, resolution 1920x1080. Last updated: May 21, 2025.</p>
+
+<div id="clock" style="text-align:center; font-size:40px; margin-top:10px;"></div>
+
+<script type="text/javascript">
+function updateClock() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  if (minutes < 10) { minutes = "0" + minutes; }
+  if (seconds < 10) { seconds = "0" + seconds; }
+  var timeString = hours + ":" + minutes + ":" + seconds;
+  document.getElementById('clock').innerHTML = "Current Time: " + timeString;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+
+
+</div>
+
 </body>
 </html>
