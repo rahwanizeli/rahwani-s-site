@@ -167,6 +167,10 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+.video-container {
+  text-align: center;
+}
 </style>
 </head>
 <body>
@@ -264,6 +268,13 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(8)"></span>    
 </div>
 
+<div style="text-align: center;">
+  <video width="560" height="315" loop controls>
+    <source src="gambau/memories.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 <script>
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -293,6 +304,29 @@ function showSlides(n) {
 }
 </script>
 
+	<!-- Disclaimer -->
+  <div id="footer">
+  <p style="font family: sans serif; text-align:center; font-size:30px;">&copy; 2025 RAHWANI. Recommended browser: Microsoft Edge. Last updated: May 11, 2025.</p>
+
+<div id="clock" style="text-align:center; font-size:40px; margin-top:10px;"></div>
+
+<script type="text/javascript">
+function updateClock() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  if (minutes < 10) { minutes = "0" + minutes; }
+  if (seconds < 10) { seconds = "0" + seconds; }
+  var timeString = hours + ":" + minutes + ":" + seconds;
+  document.getElementById('clock').innerHTML = "Current Time: " + timeString;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+
+
+</div>
 
 </body>
 </html>
